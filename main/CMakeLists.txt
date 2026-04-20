@@ -1,2 +1,16 @@
-idf_component_register(SRCS "main.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS
+        "main.c"
+        "src/alarms/alarm_manager.c"
+        "src/communication/leop_client.c"
+        "src/communication/wifi_manager.c"
+        "src/diagnostics/uart_console.c"
+        "src/hal/hardware_abstraction.c"
+        "src/sensors/bme280_sensor.c"
+        "src/storage/nvs_cache.c"
+        "src/storage/sensor_logger.c"
+        "src/system/watchdog_manager.c"
+        "src/ui/display_manager.c"
+    INCLUDE_DIRS
+        "."
+)
